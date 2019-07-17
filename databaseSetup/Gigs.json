@@ -1,0 +1,18 @@
+{"gigs": [
+    {   "band": "Upcoming Gig",
+        "genre": "Test",
+        "date": "24.12.2019",
+        "formattedDate": 20191224,
+        "time": "22:00",
+        "venueCity": "City1",
+        "venue": "Venue1"
+    },
+    {   "band": "Past Gig",
+        "genre": "Test",
+        "date": "5.5.2019",
+        "formattedDate": 20190505,
+        "time": "22:00",
+        "venueCity": "City2",
+        "venue": "Venue1"}
+  ]
+}

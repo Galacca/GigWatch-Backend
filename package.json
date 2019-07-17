@@ -1,0 +1,29 @@
+{
+  "name": "gigwatch-backend",
+  "version": "1.0.0",
+  "description": "Small GraphQL Backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src",
+    "watch": "nodemon src",
+    "setupGigs": "node ./databaseSetup/GigSetup",
+    "setupUsers": "node ./databaseSetup/UserSetup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Markus Hietala",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.6.1",
+    "dotenv": "^8.0.0",
+    "graphql": "^14.3.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.1",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}
