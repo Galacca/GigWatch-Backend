@@ -1,9 +1,8 @@
-// const { User } = require('../graphqlModels');
 const User = require('../mongooseModels/users');
 
 const userResolvers = {
   Query: {
-    users: () => User.find({}),
+    findUser: (root, args) => User.find({ username: { $regex: args.username } }),
     userCount: () => User.collection.countDocuments(),
   },
 };

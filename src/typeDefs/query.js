@@ -1,11 +1,9 @@
 const { gql } = require('apollo-server');
 
-// [User]
-
 const query = gql`
   type Query {
     gigs: [Gig]
-    users: [User]
+    findUser(username: String!): [User]
     upcoming: [Gig]
     userCount: Int!
   }
