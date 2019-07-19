@@ -1,4 +1,5 @@
-const { gigs } = require('../data');
+// const { gigs } = require('../data');
+const gigs = require('../mongooseModels/gigs');
 const { GetCurrentFormattedDate } = require('../utils/date.js');
 
 class Gig {

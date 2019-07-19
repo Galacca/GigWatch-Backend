@@ -1,4 +1,5 @@
-const { users } = require('../data');
+// const { users } = require('../data');
+const users = require('../mongooseModels/users');
 
 class User {
   static all() {

@@ -5,9 +5,9 @@ const userType = gql`
     login: String!
     username: String!
     password: String!
-    friends: [Int]
-    attending: [Int]
-    interested: [Int]
+    friends: [String]
+    attending: [String]
+    interested: [String]
     id: ID!
   }
 `;

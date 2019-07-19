@@ -1,3 +1,5 @@
+// Dummy data used in early stages
+
 const gigs = [
   {
     band: 'Upcoming Gig',
