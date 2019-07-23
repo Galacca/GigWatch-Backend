@@ -28,5 +28,8 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  attending: {
+    type: [String],
+  },
 });
-module.exports = mongoose.model('Gig', schema);
+module.exports = mongoose.model('Gigs', schema);

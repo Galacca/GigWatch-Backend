@@ -9,7 +9,8 @@ const gigType = gql`
     time: String!
     venueCity: String!
     venue: String!
-    id: ID!
+    _id: ID!
+    attending: [String]
   }
 `;
 

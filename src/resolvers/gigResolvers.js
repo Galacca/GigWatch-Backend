@@ -1,9 +1,10 @@
-const { Gig } = require('../graphqlModels');
+const Gig = require('../mongooseModels/gigs');
+const { GetCurrentFormattedDate } = require('../utils/date.js');
 
 const gigResolvers = {
   Query: {
-    gigs: () => Gig.all(),
-    upcoming: () => Gig.upcoming(),
+    gigCount: () => Gig.collection.countDocuments(),
+    upcoming: () => Gig.find({ formattedDate: { $gt: GetCurrentFormattedDate() } }),
   },
 };
 
