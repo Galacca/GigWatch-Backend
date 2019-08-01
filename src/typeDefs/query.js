@@ -7,6 +7,7 @@ const query = gql`
     userCount: Int!
     gigCount: Int!
     upcomingGigsAttendedByFriends(myId: String!): [Gig]
+    allGigs: [Gig]
   }
 `;
 

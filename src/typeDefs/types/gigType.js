@@ -11,7 +11,12 @@ const gigType = gql`
     venue: String!
     _id: ID!
     attending: [String]
-  }
+    rating: [Rating]
+  },
+  type Rating {
+  stars: Int
+  raterID: String
+}
 `;
 
 module.exports = {

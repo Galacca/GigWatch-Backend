@@ -16,14 +16,19 @@ const schema = new mongoose.Schema({
     required: true,
     minlength: 3,
   },
-  friends: {
-    type: [String],
-  },
-  attending: {
-    type: [String],
-  },
-  interested: {
-    type: [String],
-  },
+  friends: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: this,
+    }],
+  attending: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Gigs',
+    }],
+  interested: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Gigs',
+  }],
 });
 module.exports = mongoose.model('Users', schema);

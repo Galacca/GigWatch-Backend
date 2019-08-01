@@ -28,8 +28,14 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  attending: {
-    type: [String],
-  },
+  attending: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Users',
+    }],
+  rating: [{
+    stars: Number,
+    raterID: { type: mongoose.Schema.Types.ObjectId, ref: 'Users' },
+  }],
 });
 module.exports = mongoose.model('Gigs', schema);
