@@ -1,6 +1,6 @@
 // This file contains resolvers that require access to both collections (users and gigs).
-// Would probably be optimal to return the usernames of attending friends as well,
-// but early optimization etc...
+// Would probably be optimal to return the usernames of attending friends as well.
+// Also make this use context later on
 const Gig = require('../mongooseModels/gigs');
 const { GetCurrentFormattedDate } = require('../utils/date.js');
 const User = require('../mongooseModels/users');
