@@ -14,6 +14,13 @@ const userResolvers = {
       currentUser.friends = currentUser.friends.concat(args.IdToAddAsFriend);
       await currentUser.save();
     },
+    removeUserFromFriends: async (root, args) => {
+      const currentUser = await User.findById(args.myId);
+      // eslint-disable-next-line eqeqeq
+      const newFriendsList = currentUser.friends.filter(f => f != args.IdToRemoveFromFriends);
+      currentUser.friends = newFriendsList;
+      await currentUser.save();
+    },
   },
 };
 
