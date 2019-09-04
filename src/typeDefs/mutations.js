@@ -4,6 +4,9 @@ const mutation = gql`
 type Mutation {
     addUserAsFriend(myId: String!, IdToAddAsFriend: String!): User
     removeUserFromFriends(myId: String!, IdToRemoveFromFriends: String!): User
+    attendGig(myId: String!, gigId: String!): User
+    interestedGig(myId: String!, gigId: String!): User
+    statusSwitch(myId: String!, gigId: String!, switchFrom: String!, switchTo: String!): User
 }
 `;
 

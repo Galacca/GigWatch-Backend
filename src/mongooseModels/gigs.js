@@ -33,6 +33,11 @@ const schema = new mongoose.Schema({
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Users',
     }],
+  interested: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Users',
+    }],
   rating: [{
     stars: Number,
     raterID: { type: mongoose.Schema.Types.ObjectId, ref: 'Users' },
