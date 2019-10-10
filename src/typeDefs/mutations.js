@@ -6,7 +6,7 @@ type Mutation {
     removeUserFromFriends(myId: String!, IdToRemoveFromFriends: String!): User
     attendGig(myId: String!, gigId: String!): User
     interestedGig(myId: String!, gigId: String!): User
-    statusSwitch(myId: String!, gigId: String!, switchFrom: String!, switchTo: String!): User
+    statusSwitch(myId: String!, gigId: String!, switchFrom: AttendingInterested!, switchTo: AttendingInterested!): User
 }
 `;
 

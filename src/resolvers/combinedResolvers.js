@@ -35,6 +35,7 @@ const combinedResolvers = {
       currentGig.attending = currentGig.attending.concat(args.myId);
       await currentUser.save();
       await currentGig.save();
+      return currentUser;
     },
     interestedGig: async (root, args) => {
       const currentUser = await User.findOne({ _id: args.myId });
@@ -48,6 +49,7 @@ const combinedResolvers = {
       currentGig.interested = currentGig.interested.concat(args.myId);
       await currentUser.save();
       await currentGig.save();
+      return currentUser;
     },
     statusSwitch: async (root, args) => {
       const currentUser = await User.findOne({ _id: args.myId });
@@ -65,6 +67,7 @@ const combinedResolvers = {
       currentGig[switchTo] = currentGig[switchTo].concat(args.myId);
       await currentUser.save();
       await currentGig.save();
+      return currentUser;
     },
   },
 };
