@@ -8,9 +8,5 @@ that I might actually consider using myself.
 
 Features:
 
-Add / Remove Friends
-View gigs your friends are attending or interested in
-
-Mark a gig as attending or interested and switch or remove these statuses
-Rate a gig
+Add / Remove Friends, view gigs your friends are attending or interested in, mark a gig as attending or interested and switch or remove these statuses, rate a gig
 
